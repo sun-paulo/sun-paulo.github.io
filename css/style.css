@@ -10,7 +10,6 @@ body {
 
 /* BEGIN (write your solution here) */
 p {
-    margin-top: 5px;
     margin-bottom: 12px;
 }
 h1, h2, h3 {
@@ -36,12 +35,5 @@ h3 {
 #footer {
     margin-top: 64px;
     text-align: center;
-}
-#spec {
-    margin-top: 5px;
-}
-.contact {
-    margin-top: 0px;
-    margin-bottom: 5px;
 }
 /* END */
