@@ -1,0 +1,18 @@
+ const smallestDivisor = (num) => {
+   if (num === 0) {
+     return NaN;
+   }
+   else if (num === 1){
+     return 1;
+   }
+   else {
+  const iter = (counter, acc) => {
+    if (counter === 0) {
+      return acc - 1;
+    }
+    return iter(num % acc, acc + 1); 
+  }
+return iter (num, 2);
+}
+};
+console.log(smallestDivisor(5));
