@@ -16,3 +16,15 @@ return iter (num, 2);
 }
 };
 console.log(smallestDivisor(5));
+
+//Эта функция переворачивает текст
+const reverse = (str) => {
+  let final = '';
+  let counter = str.length;
+  while (counter > 0) {
+    final = final + str[counter - 1];
+    counter = counter - 1;
+  }
+  return final;
+}
+console.log(reverse("Переворачивает текст"));
