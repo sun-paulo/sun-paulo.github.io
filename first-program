@@ -28,3 +28,23 @@ const reverse = (str) => {
   return final;
 }
 console.log(reverse("Переворачивает текст"));
+
+// Функция isPrime. Она принимает число и возвращает true, если число является простым, и false в ином случае.
+const isPrime = (num) => {
+  if (num <= 1) {
+    return 'false';
+  }
+  else {
+    let ost = 1;
+    for (let i = 2; ost !== 0; i++) {
+      ost = num % i;
+      if (i > num / 2) {
+        return 'true';
+      }
+    }
+  }
+  return 'false';
+};
+console.log(isPrime(7));
+export default isPrime;
+
